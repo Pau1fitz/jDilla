@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="jDillaApp">
 <head>
     <meta charset="UTF-8">
     <meta content="J Dilla Website" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>J Dilla</title>
     <link href="assets/stylesheets/css/style.css" rel="stylesheet">
-    <link href=
-    "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css"
-    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
     <script src="assets/js/jquery-rotate-plugin.js"></script>
     <script src="assets/js/recordRotate.js"></script>
+    <script src="assets/js/music.js"></script>
 </head>
 
-<body>
-    <nav>
+
+<body ng-controller="jDillaCtrl">
+     <nav>
         <div class="nav-wrapper z-depth-2">
             <a class="brand-logo" href="#">J Dilla</a>
 
             <ul class="right hide-on-med-and-down" id="nav-mobile">
                 <li>
-                    <a href=
-                    "https://en.wikipedia.org/wiki/J_Dilla">Biography</a>
+                    <a href="https://en.wikipedia.org/wiki/J_Dilla">Biography</a>
                 </li>
 
                 <li>
-                    <a href=
-                    "https://play.spotify.com/artist/0IVcLMMbm05VIjnzPkGCyp?play=true&utm_source=open.spotify.com&utm_medium=open">
-                    Music</a>
+                    <a href="https://play.spotify.com/artist/0IVcLMMbm05VIjnzPkGCyp?play=true&utm_source=open.spotify.com&utm_medium=open">Music</a>
                 </li>
 
                 <li>
@@ -41,93 +39,84 @@
     <div class="container">
         <div class="row">
             <div class="col s12">
+
                 <h1>J Dilla</h1>
 
                 <h4>James Dewitt Yancey (February 7, 1974 &mdash; February 10,
                 2006)</h4><br>
-                <img class="jdilla-pic" src="assets/images/dilla.jpg">
+                <img src="assets/images/dilla.jpg" class="jdilla-pic">
 
-                <blockquote class="quote">
-                    <p>"James Dewitt Yancey, better known by the stage names J
-                    Dilla and Jay Dee, was an American record producer who
-                    emerged from the mid-1990s underground hip-hop scene in
-                    Detroit, Michigan. According to his obituary at NPR.org, he
-                    was one of the music industry's most influential hip-hop
-                    artists, working for big-name acts including A Tribe Called
-                    Quest, De La Soul, Busta Rhymes, The Pharcyde and Common.
-                    Yancey died in 2006 of the blood disease Thrombotic
-                    thrombocytopenic purpura."</p>
+                <blockquote class="quote"><p>"James Dewitt Yancey, better known by the
+                stage names J Dilla and Jay Dee, was an American record
+                producer who emerged from the mid-1990s underground hip-hop
+                scene in Detroit, Michigan. According to his obituary at
+                NPR.org, he was one of the music industry's most influential
+                hip-hop artists, working for big-name acts including A Tribe
+                Called Quest, De La Soul, Busta Rhymes, The Pharcyde and
+                Common. Yancey died in 2006 of the blood disease Thrombotic
+                thrombocytopenic purpura."</p> 
                 </blockquote>
             </div>
 
-            <div class="col s12"><img class="responsive-img record" src=
-            "assets/images/record.png"></div>
+       
 
-            <div class="col s6 offset-s4 controls">
-                <a class=
-                "waves-effect waves-light btn-large black">Play<i class=
-                "mdi-av-play-arrow"></i></a> <a class=
-                "waves-effect waves-light btn-large black">Next<i class=
-                "mdi-av-fast-forward"></i></a>
-            </div>
+      <div class="col s12">
+          <img class="responsive-img record" src="assets/images/record.png">
+      </div>
 
-            <table>
-                <tr>
-                    <td class="one">
-                        <blockquote class="friend-quote">
-                            <img class="circle responsive-img" src=
-                            "assets/images/questlove.jpg">
+       <div class="col s6 offset-s4 controls">
+            <a ng-click="playSong()" class="waves-effect waves-light btn-large black">Play<i class="mdi-av-play-arrow"></i></a>
+            <a ng-click="playSong()" class="waves-effect waves-light btn-large black">Next<i class="mdi-av-fast-forward"></i></a>
+      </div>
+       
 
-                            <p>"If you were to secretly ask the most praised
-                            hip-hop producers, if given a top three, who they
-                            fear the most, Dilla’s name would chart on
-                            everyone’s list, hands down."</p>
+   
 
-                            <footer>
-                                - Questlove
-                            </footer>
-                        </blockquote>
-                    </td>
+        
 
-                    <td>
-                        <blockquote class="friend-quote">
-                            <img class="circle responsive-img" src=
-                            "assets/images/blackthought.jpg">
+        <table>
+            <tr>
+                <td class="one">
+                <blockquote class="friend-quote">
+                    <img class="circle responsive-img" src="assets/images/questlove.jpg">
+                    <p>"If you were to secretly ask the most praised hip-hop producers, if given a
+                    top three, who they fear the most, Dilla’s name would chart
+                    on everyone’s list, hands down."</p>
+                       <footer>- Questlove</footer>
+                   </blockquote>
+                </td>
 
-                            <p>I can't begin to explain the influence his mind
-                            and ear has had on my band, myself, and the careers
-                            of so many other artists. The most humble, modest,
-                            worthy and gifted beatmaker I've known...and
-                            definitely the best producer on a mic."</p>
+                <td>
+                <blockquote class="friend-quote">
+                    <img class="circle responsive-img" src="assets/images/blackthought.jpg">
+                    
+                    <p>I can't begin to explain the influence his mind and ear has had on my
+                    band, myself, and the careers of so many other artists. The
+                    most humble, modest, worthy and gifted beatmaker I've
+                    known...and definitely the best producer on a mic."</p>
+                    <footer>- Black Thought</footer>
+                    </blockquote>
+                </td>
 
-                            <footer>
-                                - Black Thought
-                            </footer>
-                        </blockquote>
-                    </td>
+                <td>
+                <blockquote class="friend-quote">
+                    <img class="circle responsive-img martin" src="assets/images/martin.jpg">
+                    <p>"He was one of the greatest, man. He was the greatest to ever do it, for the
+                    new cats. And for his mother to tell me that I was his
+                    favorite producer – I was like ‘Wow, that’s dope,
+                    man.’"</p>
+                    <footer>- Martin Moss</footer>
+                    </blockquote>
+                </td>
+            </tr>
+        </table>
 
-                    <td>
-                        <blockquote class="friend-quote">
-                            <img class="circle responsive-img martin" src=
-                            "assets/images/martin.jpg">
-
-                            <p>"He was one of the greatest, man. He was the
-                            greatest to ever do it, for the new cats. And for
-                            his mother to tell me that I was his favorite
-                            producer – I was like ‘Wow, that’s dope, man.’"</p>
-
-                            <footer>
-                                - Martin Moss
-                            </footer>
-                        </blockquote>
-                    </td>
-                </tr>
-            </table>
         </div>
-    </div>
+         </div>
 
-    <footer class="page-footer end">
-        J Dilla © Copyright 2014
-    </footer>
+        <footer class="page-footer end">
+            J Dilla © Copyright 2014 
+        </footer>
+    
 </body>
 </html>
