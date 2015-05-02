@@ -12,7 +12,8 @@ $(document).ready(function () {
         });
     });
 
-	$('.waves-effect.stop').click(function () {
-    	$('.record').stop(true, true)
-    });  
+    $('.waves-effect.stop').click(function () {
+        $('.record').stop(true, true)
+    });
+   
 });
