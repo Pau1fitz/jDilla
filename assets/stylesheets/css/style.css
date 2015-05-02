@@ -1,63 +1,61 @@
-@import url(http://fonts.googleapis.com/css?family=Bevan);
+@import "http://fonts.googleapis.com/css?family=Bevan";
 
 @font-face {
-    font-family: gangsterFont;
-    src: url('Painterz.ttf');
+    font-family:gangsterFont;
+    src:url(Painterz.ttf)
 }
 
-a.brand-logo{
-  font-family: gangsterFont;
-  color: #FFDF00;
+a.brand-logo {
+    font-family:gangsterFont;
+    color:#FFDF00
 }
 
-nav .nav-wrapper{
-  background-color: #000000;
+nav .nav-wrapper {
+    background-color:#000
 }
 
-nav ul a{
-  font-family: 'Bevan', cursive;
-  color: #FFDF00;
+nav ul a {
+    font-family:'Bevan',cursive;
+    color:#FFDF00
 }
 
-h1{
-  font-family: 'Bevan', cursive;
+h1 {
+    font-family:'Bevan',cursive
 }
 
-h2{
-font-family: 'Bevan', cursive;
+h2 {
+    font-family:'Bevan',cursive
 }
 
-blockquote.quote{
-  border-left: 5px solid black;
+blockquote.quote {
+    border-left:5px solid #000
 }
 
-blockquote.friend-quote{
-  border-left: 1px solid black;
+blockquote.friend-quote {
+    border-left:1px solid #000
 }
 
-blockquote.friend-quote p{
-font-style: italic;
+blockquote.friend-quote p {
+    font-style:italic
 }
 
-.jdilla-pic{
-  float: right;
-  padding-left: 2rem;
-  width: 200px;
+.jdilla-pic {
+    float:right;
+    padding-left:2rem;
+    width:200px
 }
 
-footer.page-footer.end{
-  background-color: #000000;
-  font-family: 'Bevan', cursive;
-  color: white;
+footer.page-footer.end {
+    background-color:#000;
+    font-family:'Bevan',cursive;
+    color:#fff
 }
 
-img.responsive-img.martin{
-  height: 3.5rem;
+img.responsive-img.martin {
+    height:3.5rem
 }
 
-.waves-effect{
-  position: relative;
-  margin-bottom: 5rem;
+.waves-effect {
+    position:relative;
+    margin-bottom:5rem
 }
-
-
