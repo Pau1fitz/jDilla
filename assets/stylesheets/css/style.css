@@ -1,116 +1,63 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+@import url(http://fonts.googleapis.com/css?family=Bevan);
+
+@font-face {
+    font-family: gangsterFont;
+    src: url('Painterz.ttf');
 }
 
-html {
-  line-height: 1;
+a.brand-logo{
+  font-family: gangsterFont;
+  color: #FFDF00;
 }
 
-ol, ul {
-  list-style: none;
+nav .nav-wrapper{
+  background-color: #000000;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+nav ul a{
+  font-family: 'Bevan', cursive;
+  color: #FFDF00;
 }
 
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+h1{
+  font-family: 'Bevan', cursive;
 }
 
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
+h2{
+font-family: 'Bevan', cursive;
 }
 
-a img {
-  border: none;
+blockquote.quote{
+  border-left: 5px solid black;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
+blockquote.friend-quote{
+  border-left: 1px solid black;
 }
 
-/* COLOURS */
-/* VARIABLES */
-body {
-  padding: 20px;
-  background-image: url(../../images/donuts.jpg);
+blockquote.friend-quote p{
+font-style: italic;
 }
-body .container {
-  width: 670px;
-  margin: 0 auto;
-  background-color: white;
-  padding: 20px 20px 20px 20px;
+
+.jdilla-pic{
+  float: right;
+  padding-left: 2rem;
+  width: 200px;
 }
-body .container div.header {
-  text-align: center;
+
+footer.page-footer.end{
+  background-color: #000000;
+  font-family: 'Bevan', cursive;
+  color: white;
 }
-body .container div.header h1 {
-  margin-bottom: 20px;
-  font-size: xx-large;
+
+img.responsive-img.martin{
+  height: 3.5rem;
 }
-body .container div p {
-  margin-bottom: 20px;
+
+.waves-effect{
+  position: relative;
+  margin-bottom: 5rem;
 }
-body .container div p br {
-  height: 40px;
-  display: block;
-}
-body .container table.trivia td {
-  padding: 10px;
-}
-body .container table.trivia .one {
-  padding-left: 0;
-}
-body .container table.trivia .three {
-  padding-right: 0;
-}
-body .container table.trivia div {
-  text-align: center;
-}
-body .container table.trivia img {
-  float: left;
-  margin-right: 5px;
-}
-body .container div.footer {
-  text-align: center;
-  padding-top: 40px;
-}
-body .container div.footer p {
-  margin-bottom: 10px;
-}
-body .container div.footer div.houses p {
-  margin-left: 20px;
-  height: 1000px;
-  display: block;
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  font-family: Monaco;
-  background-color: red;
-  text-align: center;
-}
+
+
