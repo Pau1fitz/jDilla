@@ -31,6 +31,10 @@ myApp.controller('jDillaCtrl', ['$scope', '$http', 'Music', function ($scope, $h
         media.play();
     }
 
+     $scope.stopSong = function () {
+        media.pause();
+    }
+
     randomSong = function(){
     	return Math.round(Math.random() * ($scope.songs.length - 1));
     }
