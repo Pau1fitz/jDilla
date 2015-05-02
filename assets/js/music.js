@@ -12,8 +12,11 @@ var myApp = angular.module('jDillaApp', [])
     return o
 })
 
-
 myApp.controller('jDillaCtrl', ['$scope', '$http', 'Music', function ($scope, $http, Music) {
+
+    var media = new Audio();
+
+    $scope.songs = Music.songs;
 
     Music.getNextSongs()
         .success(function (data) {
@@ -21,9 +24,6 @@ myApp.controller('jDillaCtrl', ['$scope', '$http', 'Music', function ($scope, $h
             $scope.songs.push(data.results[i].previewUrl)
         }
     });
-
-    $scope.songs = Music.songs;
-    var media = new Audio();
 
     $scope.playSong = function () {
         media.pause();

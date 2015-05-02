@@ -2,7 +2,6 @@
 this rotates the record for 30 secs, the 
 length of each snippet provided by iTunes
 */
-
 $(document).ready(function () {
 
     $('.waves-effect').click(function () {
