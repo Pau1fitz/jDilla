@@ -16,102 +16,100 @@
 </head>
 
 <body ng-controller="jDillaCtrl">
-     <nav>
-        <div class="nav-wrapper z-depth-2">
-            <a class="brand-logo" href="#">J Dilla</a>
+  <nav>
+    <div class="nav-wrapper z-depth-2">
+      <a class="brand-logo" href="#">J Dilla</a>
+      <ul class="right hide-on-med-and-down" id="nav-mobile">
+        <li>
+            <a href="https://en.wikipedia.org/wiki/J_Dilla">Biography</a>
+        </li>
+        <li>
+            <a href="https://play.spotify.com/artist/0IVcLMMbm05VIjnzPkGCyp?play=true&utm_source=open.spotify.com&utm_medium=open">Music</a>
+        </li>
+        <li>
+            <a href="#">Quotes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-            <ul class="right hide-on-med-and-down" id="nav-mobile">
-                <li>
-                    <a href="https://en.wikipedia.org/wiki/J_Dilla">Biography</a>
-                </li>
+  <div class="container">
+        
+    <div class="row">
+            
+      <div class="col s12">
 
-                <li>
-                    <a href="https://play.spotify.com/artist/0IVcLMMbm05VIjnzPkGCyp?play=true&utm_source=open.spotify.com&utm_medium=open">Music</a>
-                </li>
+        <h1>J Dilla</h1>
 
-                <li>
-                    <a href="#">Quotes</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+        <h4>James Dewitt Yancey (February 7, 1974 &mdash; February 10, 2006)</h4>
+        <br>
+        <img src="assets/images/dilla.jpg" class="jdilla-pic">
 
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
+        <blockquote class="quote">
+          <p>"James Dewitt Yancey, better known by the
+          stage names J Dilla and Jay Dee, was an American record
+          producer who emerged from the mid-1990s underground hip-hop
+          scene in Detroit, Michigan. According to his obituary at
+          NPR.org, he was one of the music industry's most influential
+          hip-hop artists, working for big-name acts including A Tribe
+          Called Quest, De La Soul, Busta Rhymes, The Pharcyde and
+          Common. Yancey died in 2006 of the blood disease Thrombotic
+          thrombocytopenic purpura."</p> 
+        </blockquote>
 
-                <h1>J Dilla</h1>
-
-                <h4>James Dewitt Yancey (February 7, 1974 &mdash; February 10,
-                2006)</h4><br>
-                <img src="assets/images/dilla.jpg" class="jdilla-pic">
-
-                <blockquote class="quote"><p>"James Dewitt Yancey, better known by the
-                stage names J Dilla and Jay Dee, was an American record
-                producer who emerged from the mid-1990s underground hip-hop
-                scene in Detroit, Michigan. According to his obituary at
-                NPR.org, he was one of the music industry's most influential
-                hip-hop artists, working for big-name acts including A Tribe
-                Called Quest, De La Soul, Busta Rhymes, The Pharcyde and
-                Common. Yancey died in 2006 of the blood disease Thrombotic
-                thrombocytopenic purpura."</p> 
-                </blockquote>
-            </div>
-
-       
+      </div>
 
       <div class="col s12">
-          <img class="responsive-img record" src="assets/images/record.png">
+         <img class="responsive-img record" src="assets/images/record.png">
       </div>
 
-       <div class="col s6 offset-s4 controls">
-            <a ng-click="playSong()" class="waves-effect waves-light btn-large black">Play<i class="mdi-av-play-arrow"></i></a>
-            <a ng-click="playSong()" class="waves-effect waves-light btn-large black">Next<i class="mdi-av-fast-forward"></i></a>
+      <div class="col s6 offset-s4 controls">
+        <a ng-click="playSong()" class="waves-effect waves-light btn-large black">Play<i class="mdi-av-play-arrow"></i></a>
+        <a ng-click="playSong()" class="waves-effect waves-light btn-large black">Next<i class="mdi-av-fast-forward"></i></a>
       </div>
 
-        <table>
-            <tr>
-                <td class="one">
-                <blockquote class="friend-quote">
-                    <img class="circle responsive-img" src="assets/images/questlove.jpg">
-                    <p>"If you were to secretly ask the most praised hip-hop producers, if given a
-                    top three, who they fear the most, Dilla’s name would chart
-                    on everyone’s list, hands down."</p>
-                       <footer>- Questlove</footer>
-                   </blockquote>
-                </td>
+      <table>
+        <tr>
+          <td class="one">
+            <blockquote class="friend-quote">
+                <img class="circle responsive-img" src="assets/images/questlove.jpg">
+                <p>"If you were to secretly ask the most praised hip-hop producers, if given a
+                top three, who they fear the most, Dilla’s name would chart
+                on everyone’s list, hands down."</p>
+                <footer>- Questlove</footer>
+            </blockquote>
+          </td>
 
-                <td>
-                <blockquote class="friend-quote">
-                    <img class="circle responsive-img" src="assets/images/blackthought.jpg">
-                    
-                    <p>I can't begin to explain the influence his mind and ear has had on my
-                    band, myself, and the careers of so many other artists. The
-                    most humble, modest, worthy and gifted beatmaker I've
-                    known...and definitely the best producer on a mic."</p>
-                    <footer>- Black Thought</footer>
-                    </blockquote>
-                </td>
+          <td>
+            <blockquote class="friend-quote">
+                <img class="circle responsive-img" src="assets/images/blackthought.jpg">      
+                <p>I can't begin to explain the influence his mind and ear has had on my
+                band, myself, and the careers of so many other artists. The
+                most humble, modest, worthy and gifted beatmaker I've
+                known...and definitely the best producer on a mic."</p>
+                <footer>- Black Thought</footer>
+            </blockquote>
+          </td>
 
-                <td>
-                <blockquote class="friend-quote">
-                    <img class="circle responsive-img martin" src="assets/images/martin.jpg">
-                    <p>"He was one of the greatest, man. He was the greatest to ever do it, for the
-                    new cats. And for his mother to tell me that I was his
-                    favorite producer – I was like ‘Wow, that’s dope,
-                    man.’"</p>
-                    <footer>- Martin Moss</footer>
-                    </blockquote>
-                </td>
-            </tr>
-        </table>
+          <td>
+            <blockquote class="friend-quote">
+                <img class="circle responsive-img martin" src="assets/images/martin.jpg">
+                <p>"He was one of the greatest, man. He was the greatest to ever do it, for the
+                new cats. And for his mother to tell me that I was his
+                favorite producer – I was like ‘Wow, that’s dope,
+                man.’"</p>
+                <footer>- Martin Moss</footer>
+            </blockquote>
+          </td>
+        </tr>
+      </table>
 
-        </div>
-         </div>
+    </div>
+  </div>
 
-        <footer class="page-footer end">
-            J Dilla © Copyright 2014 
-        </footer>
-    
+      <footer class="page-footer end">
+        J Dilla © Copyright 2014 
+      </footer>
+      
 </body>
 </html>
